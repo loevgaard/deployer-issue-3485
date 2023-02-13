@@ -21,6 +21,9 @@ jobs:
                     coverage: "none"
                     php-version: "8.1"
 
+            -   name: "Install composer dependencies"
+                uses: "ramsey/composer-install@v2"
+
             -   name: "Output of vendor/bin/dep deploy"
                 run: "vendor/bin/dep deploy"
 
