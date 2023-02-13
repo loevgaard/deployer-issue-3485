@@ -2,7 +2,7 @@
 
 This is a reproducer of this issue: [github.com/deployphp/deployer/issues/3485](https://github.com/deployphp/deployer/issues/3485)
 
-To reproduce, do the following:
+To reproduce, do the following (you can also visit the action [here](https://github.com/loevgaard/deployer-issue-3485/actions/runs/4167048675)):
 
 ```shell
 composer install
