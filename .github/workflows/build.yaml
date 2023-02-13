@@ -24,8 +24,8 @@ jobs:
             -   name: "Install composer dependencies"
                 uses: "ramsey/composer-install@v2"
 
-            -   name: "Output of vendor/bin/dep deploy"
-                run: "vendor/bin/dep deploy"
-
             -   name: "Output of php include_path.php"
                 run: "php include_path.php"
+
+            -   name: "Output of vendor/bin/dep deploy"
+                run: "vendor/bin/dep deploy"
