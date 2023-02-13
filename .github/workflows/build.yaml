@@ -1,0 +1,28 @@
+name: "build"
+
+on:
+    push: ~
+    pull_request: ~
+    workflow_dispatch: ~
+
+jobs:
+    output:
+        name: "Output"
+
+        runs-on: "ubuntu-latest"
+
+        steps:
+            -   name: "Checkout"
+                uses: "actions/checkout@v3"
+
+            -   name: "Install PHP with extensions"
+                uses: "shivammathur/setup-php@v2"
+                with:
+                    coverage: "none"
+                    php-version: "8.1"
+
+            -   name: "Output of vendor/bin/dep deploy"
+                run: "vendor/bin/dep deploy"
+
+            -   name: "Output of php include_path.php"
+                run: "php include_path.php"

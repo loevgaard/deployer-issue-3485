@@ -1,0 +1,9 @@
+{
+    "license": "proprietary",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "deployer/deployer": "^7.1",
+        "setono/deployer-dotenv": "2.x-dev"
+    }
+}
