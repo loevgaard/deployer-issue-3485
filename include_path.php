@@ -7,5 +7,3 @@ $paths = explode(PATH_SEPARATOR, get_include_path());
 foreach ($paths as $path) {
     echo "- $path\n";
 }
-
-require_once 'recipe/setono_dotenv.php';
